@@ -41,7 +41,7 @@ const login = async () => {
                 </svg>
                 <p class="inline ml-4">Bejelentkezés Discorddal</p>
             </button>
-            <button @click="router.push(`/guides`)" class="bg-[#5865F2] w-full h-10 rounded-md shadow-sm hover:shadow-xl transition-all">Tovább</button>
+            <button @click="router.push(`/guides`)" v-else class="bg-[#5865F2] w-full h-10 rounded-md shadow-sm hover:shadow-xl transition-all">Tovább</button>
         </div>
     </div>
 </template>
