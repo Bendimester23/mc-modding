@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 definePageMeta({
-    middleware: [`auth`, `access`],
+    middleware: [`auth`],
     layout: `guide`
 })
 useHead({

@@ -17,5 +17,5 @@ switch (level.value) {
 <template>
     <NuxtLink :to="url" :class="`ml-${level * 2 + 2} ${font} ${route.path == url && `font-bold`} hover:underline transition-all duration-200`">
         <slot></slot>
-    </NuxtLink>
+    </NuxtLink><br>
 </template>
