@@ -4,4 +4,4 @@ title = "Alapok"
 weight = 1
 +++
 
-Lorem Ipsum.
+Ebben a fejezetben megtanulhatod hogyan hozhatod létre saját Java projektedet
