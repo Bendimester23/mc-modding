@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://mc-modding.vercel.app/basics/</loc>
+    <lastmod>2022-08-20T12:45:28+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://mc-modding.vercel.app/java/why/</loc>
+    <lastmod>2022-08-20T12:45:28+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://mc-modding.vercel.app/basics/intro/</loc>
+    <lastmod>2022-08-20T10:07:53+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://mc-modding.vercel.app/java/</loc>
+    <lastmod>2022-08-21T12:42:57+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://mc-modding.vercel.app/java/new-project/</loc>
+    <lastmod>2022-08-20T12:45:28+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://mc-modding.vercel.app/basics/programs/</loc>
+    <lastmod>2022-08-20T12:45:28+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://mc-modding.vercel.app/java/hello-world/</loc>
+    <lastmod>2022-08-21T12:42:57+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://mc-modding.vercel.app/</loc>
+    <lastmod>2022-08-21T12:42:57+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://mc-modding.vercel.app/categories/</loc>
+  </url>
+  <url>
+    <loc>http://mc-modding.vercel.app/tags/</loc>
+  </url>
+</urlset>

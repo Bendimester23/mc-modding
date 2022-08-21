@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Minecraft Modding</title>
+    <link>http://mc-modding.vercel.app/java/</link>
+    <description>Recent content in Java on Minecraft Modding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>hu-hu</language>
+    <lastBuildDate>Sun, 21 Aug 2022 12:42:57 +0200</lastBuildDate><atom:link href="http://mc-modding.vercel.app/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wikipédiáról kimásolt cuccok</title>
+      <link>http://mc-modding.vercel.app/java/why/</link>
+      <pubDate>Sat, 20 Aug 2022 12:45:28 +0200</pubDate>
+      <guid>http://mc-modding.vercel.app/java/why/</guid>
+      <description>A Java általános célú, objektumorientált programozási nyelv, amelyet a Sun Microsystems fejlesztett a ’90-es évek elejétől kezdve egészen 2009-ig, amikor a céget felvásárolta az Oracle.
+A JVM a Java Virtual Machine rövidítése. Ez egy program, ami értelmezi és futtatja a bytecodeot. Úgy kell elképzelni mint egy processzor, aminek ez a gépi kódja. Több különböző JVM létezik, legismertebbek: Oracle, AdoptOpenJDK, Eclipse Termuin, de példáúl egy időben a Microsoft is fejlesztett eggyet.</description>
+    </item>
+    <item>
+      <title>Projekt létrehozása</title>
+      <link>http://mc-modding.vercel.app/java/new-project/</link>
+      <pubDate>Sat, 20 Aug 2022 12:45:28 +0200</pubDate>
+      <guid>http://mc-modding.vercel.app/java/new-project/</guid>
+      <description>Mint minden compileolt nyelvnek, a Javanak is szüksége van egy build systemre, hogy ne legyen rémálom a programunk buildelése és a dependencyk kezelése. Abban az időben, amikor a Java készült, még nem volt divat a nyelvhez egy használható build systemet adni, ezért nekünk a közösség által létrehozott Gradle-t kell használjuk. (igazából a tanulás ebben a szakaszában nem szükséges, de így azoknak akik nem IntelliJ IDEA-t használnak könnyebb és jó minnél hamarabb megszokni a használatát)</description>
+    </item>
+    <item>
+      <title>Hello World</title>
+      <link>http://mc-modding.vercel.app/java/hello-world/</link>
+      <pubDate>Sun, 21 Aug 2022 12:42:57 +0200</pubDate>
+      <guid>http://mc-modding.vercel.app/java/hello-world/</guid>
+      <description>Ebben a tutorialban megírjuk a Hello World programot Javaban és értelmezzük.
+Fontos! A file nevének Project.java-nak kell lennie
+package hu.bendi.project; public class Program { public static void main(String[] args) { System.out.println(&amp;#34;Hello World!&amp;#34;); } } Futtatás: Bár javaslom a gradle használatát, itt még leírom hogy lehet nélküle:
+java Program.java Ez a parancs lefordítja és futtatja az adott filet.
+Gradle esetében: ./gradlew build A build mappában pedig: java -jar my-super-cool-java-file.jar Értelmezés: A package hu.</description>
+    </item>
+  </channel>
+</rss>

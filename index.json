@@ -1,0 +1,72 @@
+[
+  {
+    "content": "Lorem Ipsum.\n",
+    "description": "",
+    "tags": null,
+    "title": "Alapok",
+    "uri": "/basics/"
+  },
+  {
+    "content": "A Java általános célú, objektumorientált programozási nyelv, amelyet a Sun Microsystems fejlesztett a ’90-es évek elejétől kezdve egészen 2009-ig, amikor a céget felvásárolta az Oracle.\nA JVM a Java Virtual Machine rövidítése. Ez egy program, ami értelmezi és futtatja a bytecodeot. Úgy kell elképzelni mint egy processzor, aminek ez a gépi kódja. Több különböző JVM létezik, legismertebbek: Oracle, AdoptOpenJDK, Eclipse Termuin, de példáúl egy időben a Microsoft is fejlesztett eggyet.\nA többi compileol programozási nyelvvel ellentétben a Java nem gépi kódba fordul, hanem bytecodeba. Ezt a kódot a JVM tudja lefuttatni, így egy kód minimális módosításokkal mindenen elfut, amire elérhető JVM.\nA Java bytecode a sima x86 gépi kódnál lényegesen több információt tart meg a kódról, így könnyű visszafejteni/szerkeszteni. Ez teszi lehetővé a Minecraft modolását.\nEgy java program és a visszafejtett kódja: ",
+    "description": "",
+    "tags": null,
+    "title": "Wikipédiáról kimásolt cuccok",
+    "uri": "/java/why/"
+  },
+  {
+    "content": "Ez egy nagy téma, aminek csak egy részét fogjuk érinteni.\nDisclaimer: A helyesírásom nem a legjobb és a fogalmazásban sem vagyok a legjobb.\nElvárások:\nMinimális angol tudás Legyen egy PC-d vagy laptopod(nem programozunk telefonon) (nem kell hihetetlenül erősnek lennie, de egy 6-8Gb ram minimum legyen benne) Nem kötelező, de jó ha van: tapasztalat bármilyen C típusú programozási nyelvvel Jelenleg ezekre a témákra gondoltam:\nJava alapok Pluginok írása(nem biztos, rég csináltam már ilyet) Modok készítése(szerveroldali, tartalmat hozzáadó)(a Fabric loadert fogjuk használni, mert a Forge nehéz és a Discord community nem számít plusz funkciónak, akármit mondanak a Quiltnél) A Minecraft protokol elemzése és egy saját szerver készítése aka. AMPEESSzK(igen, nagyon unatkozok) (itt a szerver alatt a programra gondolok, nem arra hogy lemásoljuk a Hypixelt) A tananyagok majd szöveges, esetleg audiovizuális formában lesznek elérhetőek(erre még ki kell találjak egy rendszert)\nÚj tananyag határozatlan időnként jön majd (mert nem akarok megígérni valamit, amit aztán nem tudok betartani)\n",
+    "description": "",
+    "tags": null,
+    "title": "Bevezető",
+    "uri": "/basics/intro/"
+  },
+  {
+    "content": "Lorem Ipsum.\n",
+    "description": "",
+    "tags": null,
+    "title": "Java",
+    "uri": "/java/"
+  },
+  {
+    "content": "Mint minden compileolt nyelvnek, a Javanak is szüksége van egy build systemre, hogy ne legyen rémálom a programunk buildelése és a dependencyk kezelése. Abban az időben, amikor a Java készült, még nem volt divat a nyelvhez egy használható build systemet adni, ezért nekünk a közösség által létrehozott Gradle-t kell használjuk. (igazából a tanulás ebben a szakaszában nem szükséges, de így azoknak akik nem IntelliJ IDEA-t használnak könnyebb és jó minnél hamarabb megszokni a használatát)\nIntellIJ IDEA esetében: Első lépésként rá kell kattints a ‘New Project’ gombra. A felugró ablakban válaszd a Gradle opciót majd nyomj a ‘Next’ gombra Projekt névnek megadod a projekt nevét, majd lenyitod az ‘Artifact Coordinates’ menüt és beírod a groupId-t(ez általában tld.név tehát pl hu.aneved) Ezek után még várni kell kicsit hogy betöltsön a projekt és szinkronizálja a gradle projektet, de utánna kész is a projekt. Visual Studio Code: A VSCode esetében ennél kicsit bonyolúltabb a dolog.\nFontos! A kész projekt felépítése eltérhet, de a működés ugyan az lesz! A forráskód az app/src/main/java mappában lesz ha így hozod létre a projectet.\nTelepítsd a Gradle-t! Nyisd meg a project mappáját VSCodeban! A terminálba írd be ezt: gradle init Válaszd ki hogy ‘application’! Válaszd ki a nyelvet! A subprojectes kérdésre válaszolj nemmel! A buildscript Kotlin legyen! A többi lehet nyugodtan a default! Elvileg kész a projekt. ",
+    "description": "",
+    "tags": null,
+    "title": "Projekt létrehozása",
+    "uri": "/java/new-project/"
+  },
+  {
+    "content": " JDK(Java Developement Kit) 17 Jetbrains IntellIJ IDEA (elég a Community is) vagy Visual Studio Code, ebben az esetben le kell tölteni benne a Java extension packet Amennyiben van legalább 8Gb RAMod, én az IntellIJ-t javaslom.\n",
+    "description": "",
+    "tags": null,
+    "title": "Szükséges programok",
+    "uri": "/basics/programs/"
+  },
+  {
+    "content": "Ebben a tutorialban megírjuk a Hello World programot Javaban és értelmezzük.\nFontos! A file nevének Project.java-nak kell lennie\npackage hu.bendi.project; public class Program { public static void main(String[] args) { System.out.println(\"Hello World!\"); } } Futtatás: Bár javaslom a gradle használatát, itt még leírom hogy lehet nélküle:\njava Program.java Ez a parancs lefordítja és futtatja az adott filet.\nGradle esetében: ./gradlew build A build mappában pedig: java -jar my-super-cool-java-file.jar Értelmezés: A package hu.bendi.project; sor megadja a packaget(milyen meglepő). Ez mindíg az src mappán belüli elérési út pontokkal elválasztva. A public class Program { sor deklarál egy publikus class-t(erről részletesebben majd még lesz szó). A publikus itt arra utal, hogy ezt az osztályt bármely más osztály használhatja, így a JVM beépített cuccai is. A public static void main(String[] args) { sor deklarál egy metódust main névvel és egy String(tetszőleges hosszú szöveg) lista argumentummal, ezek lesznek a program argumentumai. A név kötött, mivel ezt fogja a JVM keresni elindításkor. Ahhoz hogy A JVM le tudja futtatni a kódot, a metódusnak publikusnak és statikusnak kell lennie. A publikusról már volt szó, de a statikusról még nem. Amennyiben van egy metódusod, azt legtöbbször egy példányon kell lefuttasd:\nMyClass instance = new MyClass(); //Így nem fog menni ❌: MyClass.myMethod(); //Így fog működni ✅: instance.myMethod(); Így a metódus hozzáfér az összes változójához és metódusához a classnak. Ellenben ha statikuan deklarálod a metódust, az nem fog hozzáférni csak a többi statikusan dekralált dologhoz, viszont nem fog kelleni egy példány hogy lefuttasd.\nMyClass.myStaticMethod(); A System class statikus változója az out, ami egy PrintStream, tehát adatokat tudsz belerakni. Ez közvetlenül hozzá van kötve a program számára fenntartott stadard outputhoz, úgy mint C++ban a cout. ",
+    "description": "",
+    "tags": null,
+    "title": "Hello World",
+    "uri": "/java/hello-world/"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Minecraft Modding",
+    "uri": "/"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Categories",
+    "uri": "/categories/"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Tags",
+    "uri": "/tags/"
+  }
+]

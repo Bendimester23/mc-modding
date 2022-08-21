@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alapok on Minecraft Modding</title>
+    <link>http://mc-modding.vercel.app/basics/</link>
+    <description>Recent content in Alapok on Minecraft Modding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>hu-hu</language>
+    <lastBuildDate>Sat, 20 Aug 2022 12:45:28 +0200</lastBuildDate><atom:link href="http://mc-modding.vercel.app/basics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bevezető</title>
+      <link>http://mc-modding.vercel.app/basics/intro/</link>
+      <pubDate>Sat, 20 Aug 2022 10:07:53 +0200</pubDate>
+      <guid>http://mc-modding.vercel.app/basics/intro/</guid>
+      <description>Ez egy nagy téma, aminek csak egy részét fogjuk érinteni.
+Disclaimer: A helyesírásom nem a legjobb és a fogalmazásban sem vagyok a legjobb.
+Elvárások:
+Minimális angol tudás Legyen egy PC-d vagy laptopod(nem programozunk telefonon) (nem kell hihetetlenül erősnek lennie, de egy 6-8Gb ram minimum legyen benne) Nem kötelező, de jó ha van: tapasztalat bármilyen C típusú programozási nyelvvel Jelenleg ezekre a témákra gondoltam:
+Java alapok Pluginok írása(nem biztos, rég csináltam már ilyet) Modok készítése(szerveroldali, tartalmat hozzáadó)(a Fabric loadert fogjuk használni, mert a Forge nehéz és a Discord community nem számít plusz funkciónak, akármit mondanak a Quiltnél) A Minecraft protokol elemzése és egy saját szerver készítése aka.</description>
+    </item>
+    <item>
+      <title>Szükséges programok</title>
+      <link>http://mc-modding.vercel.app/basics/programs/</link>
+      <pubDate>Sat, 20 Aug 2022 12:45:28 +0200</pubDate>
+      <guid>http://mc-modding.vercel.app/basics/programs/</guid>
+      <description>JDK(Java Developement Kit) 17 Jetbrains IntellIJ IDEA (elég a Community is) vagy Visual Studio Code, ebben az esetben le kell tölteni benne a Java extension packet Amennyiben van legalább 8Gb RAMod, én az IntellIJ-t javaslom.</description>
+    </item>
+  </channel>
+</rss>
