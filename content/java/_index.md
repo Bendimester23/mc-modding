@@ -4,4 +4,4 @@ title = "Java"
 weight = 2
 +++
 
-Lorem Ipsum.
+Ebben a fejezetben megtanulhatod hogyan hozhatod létre saját Java projektedet
