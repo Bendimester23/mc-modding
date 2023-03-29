@@ -83,7 +83,7 @@ Ezt a file-t az `src/main/resources/assets/{modid}/blockstates` mappába rakjuk.
 Mivel a blockunknak nincsenek block statejei, így csak egyféleképpen nézhet ki.
 
 5. Ezek után jön a model az `src/main/resources/assets/{modid}/models/block mappába:
-```
+```json
 {
 	"parent": "block/cube_all",
 	"textures": {
